@@ -29,6 +29,10 @@ window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[dotnet]
+
+project/assembly_name="Bach Dang 1288"
+
 [input]
 
 move_up={
