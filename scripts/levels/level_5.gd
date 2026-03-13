@@ -25,14 +25,14 @@ func _build_map() -> void:
 	# Full river map
 	var water = ColorRect.new()
 	water.color = Color(0.1, 0.25, 0.55)
-	water.size = Vector2(6000, 3000)
-	water.position = Vector2(-500, -1000)
+	water.size = Vector2(12000, 10000)
+	water.position = Vector2(-4000, -4000)
 	water.z_index = -10
 	add_child(water)
 
 	# Riverbanks (top and bottom)
-	_add_rect(Vector2(-500, -1000), Vector2(6000, 200), Color(0.4, 0.5, 0.2))
-	_add_rect(Vector2(-500, 800), Vector2(6000, 200), Color(0.4, 0.5, 0.2))
+	_add_rect(Vector2(-4000, -4000), Vector2(12000, 4100), Color(0.4, 0.5, 0.2))
+	_add_rect(Vector2(-4000, 800), Vector2(12000, 3200), Color(0.4, 0.5, 0.2))
 
 	# Wooden stakes zone (trap area in center)
 	stake_zone_rect = Rect2(1500, 100, 800, 400)

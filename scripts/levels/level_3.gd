@@ -20,8 +20,8 @@ func _build_map() -> void:
 	# Forest ground
 	var ground = ColorRect.new()
 	ground.color = Color(0.2, 0.4, 0.15)
-	ground.size = Vector2(5000, 3000)
-	ground.position = Vector2(-500, -500)
+	ground.size = Vector2(10000, 10000)
+	ground.position = Vector2(-4000, -4000)
 	ground.z_index = -10
 	add_child(ground)
 

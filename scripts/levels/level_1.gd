@@ -19,8 +19,8 @@ func _build_map() -> void:
 	# Ground layer - village
 	var ground = ColorRect.new()
 	ground.color = Color(0.35, 0.55, 0.25)  # Green grass
-	ground.size = Vector2(4000, 3000)
-	ground.position = Vector2(-1000, -1000)
+	ground.size = Vector2(10000, 10000)
+	ground.position = Vector2(-4000, -4000)
 	ground.z_index = -10
 	add_child(ground)
 
@@ -220,6 +220,8 @@ func _add_house(pos: Vector2, is_burning: bool = false) -> void:
 		_add_fire(pos + Vector2(0, -60))
 		_add_fire(pos + Vector2(-50, 20))
 		_add_fire(pos + Vector2(60, 40))
+
+
 
 func _add_tree(pos: Vector2) -> void:
 	var tree = StaticBody2D.new()

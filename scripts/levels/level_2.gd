@@ -20,8 +20,8 @@ func _build_map() -> void:
 	# Ground
 	var ground = ColorRect.new()
 	ground.color = Color(0.4, 0.6, 0.3)
-	ground.size = Vector2(4000, 3000)
-	ground.position = Vector2(-500, -500)
+	ground.size = Vector2(10000, 10000)
+	ground.position = Vector2(-4000, -4000)
 	ground.z_index = -10
 	add_child(ground)
 
@@ -32,9 +32,9 @@ func _build_map() -> void:
 	_add_rect(Vector2(600, -200), Vector2(500, 300), Color(0.55, 0.42, 0.22))
 
 	# River area (bottom)
-	_add_rect(Vector2(-400, 500), Vector2(3500, 400), Color(0.15, 0.35, 0.65))
+	_add_rect(Vector2(-4000, 500), Vector2(10000, 4000), Color(0.15, 0.35, 0.65))
 	# Riverbank
-	_add_rect(Vector2(-400, 470), Vector2(3500, 40), Color(0.5, 0.4, 0.2))
+	_add_rect(Vector2(-4000, 470), Vector2(10000, 40), Color(0.5, 0.4, 0.2))
 
 	# Labels (signs)
 	_add_sign(Vector2(-100, -320), "HUẤN LUYỆN KIẾM THUẬT")

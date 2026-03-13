@@ -20,15 +20,15 @@ func _build_map() -> void:
 	# Ground - riverbank area
 	var ground = ColorRect.new()
 	ground.color = Color(0.35, 0.5, 0.2)
-	ground.size = Vector2(5000, 3000)
-	ground.position = Vector2(-500, -1000)
+	ground.size = Vector2(10000, 10000)
+	ground.position = Vector2(-4000, -4000)
 	ground.z_index = -10
 	add_child(ground)
 
 	# River (wide horizontal band)
-	_add_rect(Vector2(-400, 200), Vector2(4800, 500), Color(0.12, 0.3, 0.6))
+	_add_rect(Vector2(-4000, 200), Vector2(12000, 5000), Color(0.12, 0.3, 0.6))
 	# Riverbank edge
-	_add_rect(Vector2(-400, 170), Vector2(4800, 40), Color(0.5, 0.4, 0.2))
+	_add_rect(Vector2(-4000, 170), Vector2(12000, 40), Color(0.5, 0.4, 0.2))
 
 	# Log storage area (left)
 	_add_rect(Vector2(0, -200), Vector2(300, 200), Color(0.5, 0.35, 0.15))
